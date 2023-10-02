@@ -132,6 +132,7 @@ body.dark-theme{
 .dark-theme .home__umg,
 .dark-theme .popular__card:hover,
 .dark-theme .value__img,
+.dark-theme .logos__img,
 .dark-theme .accordion-open,
 .dark-theme .accordion-open .value__accordion-icon,
 .dark-theme .accordion-open .value__accordion-arrow,
@@ -221,7 +222,9 @@ body.dark-theme{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  .icon {
+    font-style: content '\f117';
+  }
 }
 
 .nav__logo{
@@ -367,6 +370,8 @@ body.dark-theme{
 .home__value-number{
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
+  align-items: center;
+  text-align: center;
 }
 
 .home__value-number span{
@@ -437,8 +442,11 @@ body.dark-theme{
 
 .logos__img img{
   height: 60px;
-  opacity: .2;
+  opacity: .4;
   transition: .3s;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid var(--first-color);
 }
 
 .logos__img:hover img{
