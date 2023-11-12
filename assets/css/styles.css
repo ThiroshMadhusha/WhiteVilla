@@ -1154,8 +1154,8 @@ body.dark-theme{
 
   .footer__info{
     flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 2rem;
+    justify-content: center;
+    padding-bottom: 6rem;
   }
 
 
