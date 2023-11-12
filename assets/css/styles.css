@@ -464,8 +464,9 @@ body.dark-theme{
 }
 .popular__cards{
   width: 100%;
+  height: 100%;
   background-color: var(--container-color);
-  padding: .5rem .5rem 1rem;
+  padding: .25rem;
   border-radius: 1rem;
   margin: 0 auto;
   transition: .5s;
