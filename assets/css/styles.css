@@ -146,7 +146,7 @@ body.dark-theme{
 .dark-theme .value__accordion-icon,
 .dark-theme .value__accordion-arrow,
 .darlk-theme .contact__orbe,
-.dark-theme .contact__card i,
+/* .dark-theme .contact__card i, */
 .dark-theme .contact__card-button,
 .dark-theme .subscribe__container{
   background-color: var(--container-color);
@@ -184,12 +184,12 @@ body.dark-theme{
 }
 
 .section {
-  padding: 4.5rem 0 2rem;
+  padding: 1rem 0 1rem;
 }
 
 .section__title {
   font-size: var(--h2-font-size);
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .section__title span {
@@ -415,7 +415,7 @@ body.dark-theme{
   display: inline-block;
   background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
   color: #fff;
-  padding: 14px 28px ;
+  padding: 10px 20px ;
   border-radius: .5rem;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -430,11 +430,13 @@ body.dark-theme{
 
 .nav__button{
   display: none;
+}
 
+.nav__button:hover{
+  box-shadow: 0 6px 12px hsla(228, 36%, 68%, 0.25);
 }
 /*=============== LOGOS ===============*/
 .logos__container{
-  padding-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem 2rem;
   justify-items: center;
@@ -460,6 +462,20 @@ body.dark-theme{
 .popular__container{
   padding: 1rem 0 5rem;
 }
+.popular__cards{
+  width: 100%;
+  background-color: var(--container-color);
+  padding: .5rem .5rem 1rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transition: .5s;
+  border: 2px solid var(--border-color);
+}
+.popular__imgs{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
 
 .popular__card{
   width: 100%;
@@ -475,7 +491,7 @@ body.dark-theme{
   width: 100%;
   height: 250px;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .popular__data{
@@ -493,11 +509,13 @@ body.dark-theme{
 }
 .popular__title{
   font-size: var(--h3-font-size);
-  margin-bottom: .75rem;
+  margin-bottom: .25rem;
 }
 
 .popular__description{
-  font-size: var(--small-font-size);
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .popular__card:hover{
@@ -682,8 +700,16 @@ body.dark-theme{
 
 .contact__card{
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1.25rem .75rem;
+  gap: 0.75rem;
+}
+
+.contact__emailcard{
+  display: grid;
+  margin-top: 12px;
+  /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
 }
 
 .contact__card-box{
@@ -702,6 +728,15 @@ body.dark-theme{
 }
 
 .contact__card i{
+  padding: 6px;
+  background-color: var(--first-color-lighten);
+  border-radius: 6px;
+  font-size: 1.25rem;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__emailcard i{
   padding: 6px;
   background-color: var(--first-color-lighten);
   border-radius: 6px;
@@ -986,12 +1021,13 @@ body.dark-theme{
   }
   .subscribe__container{
     padding: 2rem 1rem;
+    margin-top: 100x;
+    gap: 2.5rem;
   }
 
   .footer__content{
     gap: 2.5rem;
     justify-content: space-between;
-
   }
 }
 /* For medium devices */
@@ -1012,10 +1048,12 @@ body.dark-theme{
   .popular__card{
     border: 2px solid var(--first-color-lighten);
   }
+  
 
   .footer__content{
     grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
+    justify-content: center;
 
   }
   
@@ -1079,12 +1117,30 @@ body.dark-theme{
   }
 
   .subscribe__container{
-    padding: 3rem 13rem;
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 2rem;
+    border: 12px solid var(--first-color-lighten);
+  }
+
+  .subscribe__title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subscribe__description{
+    font-size: var(--normal-font-size);
+    padding: 0 8rem;
+  }
+
+  .subscribe__button{
+    font-size: var(--normal-font-size);
+    padding: 14px 28px;
   }
 
   .footer__container{
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+    gap: .5rem;
   }
 
   .footer__title{
@@ -1212,6 +1268,7 @@ body.dark-theme{
     border: 2px solid var(--first-color-lighten);
   }
 
+
   .popular__data{
     padding: 0 .25rem 0 .75rem;
   }
@@ -1219,7 +1276,7 @@ body.dark-theme{
   .value__container,
   .contact__container{
     align-items: flex-start;
-    column-gap: 1.5rem;
+    column-gap: 5.5rem;
   }
 
   .value__orbe,
@@ -1293,6 +1350,7 @@ body.dark-theme{
   .footer__content{
     grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
+    gap: 6rem;
   }
 
   .footer-title{
