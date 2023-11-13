@@ -99,7 +99,7 @@
                             <input type="text" placeholder="Easily Contact US..." class="home__search-input" readonly>
                             <button class="button">Message</button>
                         </form>
-
+                        
                         <!-- (+) eka one nam witharak add karanna
                             <form action="https://wa.me/+94711360684" class="home__search" target="_blank">
                             <i class='bx bxl-whatsapp' ></i>
@@ -667,7 +667,10 @@
                         <i class='bx bxs-map' ></i> Google Map
                     </a>
                     
+                    
                 </div>
+            
+
             </section>
         </main>
 
@@ -683,6 +686,7 @@
                         individual can experience the best possible <br>
                         living conditions for themselves.
                     </p>
+                    
                 </div>
                 <div class="footer__content">
                     <div>
@@ -749,20 +753,30 @@
                     
                 </div>
             </div>
-
             <div class="footer__info container">
                 <span class="footer__copy">
                     Thirosh Madhusha &#169; 2023 White Villa. All Rights Reserved.
                 </span>
-
-                <!-- <div class="footer__privacy">
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                </div> -->
+            </div>
+            <div class="footer__infos">
+                <span class="footer__copy">
+                    <p>White Villa Visitors Count: <span id="visitorCount">0</span></p>
+                </span>
             </div>
         </footer>
-
-
+        <!-- =======Count============ -->
+        <script>
+            // Function to update and display the visitor count
+            function updateVisitorCount() {
+                let count = localStorage.getItem('visitorCount') || 0;
+                count = parseInt(count, 10) + 1;
+                localStorage.setItem('visitorCount', count);
+                document.getElementById('visitorCount').textContent = count;
+            }
+    
+            // Call the function on page load
+            window.onload = updateVisitorCount;
+        </script>
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class='bx bxs-chevrons-up'></i>

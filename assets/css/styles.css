@@ -893,8 +893,14 @@ body.dark-theme{
 }
 
 .footer__info{
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
   margin-top: 5.5rem;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+.footer__infos{
+  padding-bottom: 6rem;
   flex-direction: column;
   text-align: center;
   row-gap: 1.5rem;
@@ -1155,9 +1161,14 @@ body.dark-theme{
   .footer__info{
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 6rem;
+    padding-bottom: 1rem;
   }
-
+  .footer__infos{
+    padding-bottom: 6rem;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5rem;
+  }
 
   
 }
