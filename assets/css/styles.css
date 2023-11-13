@@ -184,7 +184,7 @@ body.dark-theme{
 }
 
 .section {
-  padding: 2.5rem 0 1rem;
+  padding: 4.5rem 0 4rem;
 }
 
 .section__title {
@@ -893,14 +893,8 @@ body.dark-theme{
 }
 
 .footer__info{
-  padding-bottom: 1rem;
-  margin-top: 5.5rem;
-  flex-direction: column;
-  text-align: center;
-  row-gap: 1.5rem;
-}
-.footer__infos{
   padding-bottom: 6rem;
+  margin-top: 5.5rem;
   flex-direction: column;
   text-align: center;
   row-gap: 1.5rem;
@@ -1161,14 +1155,9 @@ body.dark-theme{
   .footer__info{
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 1rem;
-  }
-  .footer__infos{
     padding-bottom: 6rem;
-    flex-direction: column;
-    text-align: center;
-    row-gap: 1.5rem;
   }
+
 
   
 }
