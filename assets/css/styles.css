@@ -184,7 +184,7 @@ body.dark-theme{
 }
 
 .section {
-  padding: 4.5rem 0 4rem;
+  padding: 1rem;
 }
 
 .section__title {
@@ -464,7 +464,6 @@ body.dark-theme{
 }
 .popular__cards{
   width: 100%;
-  height: 100%;
   background-color: var(--container-color);
   padding: .25rem;
   border-radius: 1rem;
@@ -472,9 +471,12 @@ body.dark-theme{
   transition: .5s;
   border: 2px solid var(--border-color);
 }
+
+.spbtn{
+  top: 1000px;
+}
 .popular__imgs{
   width: 100%;
-  height: auto;
   border-radius: 1rem;
 }
 
@@ -553,6 +555,11 @@ body.dark-theme{
 /*=============== VALUE ===============*/
 /* row gap with the 4 cards */
 
+.section .value{
+  padding: 1rem 0 5rem;
+  top: -100px;
+
+}
 .value__container{
   row-gap: 1rem;
 }
